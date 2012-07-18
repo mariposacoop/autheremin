@@ -17,7 +17,7 @@ var password = '7xqJ3b8n'
 
 autheremin.create(username, password, function(err) {
   if (err) throw err
-  // username/password combination was saved successfully
+  // username/password combination was created successfully
 })
 
 autheremin.verify(username, password, function(err) {
@@ -27,6 +27,6 @@ autheremin.verify(username, password, function(err) {
 
 autheremin.delete(username, function(err) {
   if(err) throw err
-  // all records with that username removed from the database
+  // all records with that username deleted from the database
 })
 ```
