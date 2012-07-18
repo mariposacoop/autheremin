@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/hackmastera/autheremin.git"
   },
+  "scripts" : { 
+    "test" : "find test/test-*.js | xargs -n 1 -t node"
+  },
   "dependencies": {
     "bcrypt": "0.7.0"
   }, 
