@@ -27,6 +27,6 @@ autheremin.verify(username, password, function(err) {
 
 autheremin.delete(username, function(err) {
   if(err) throw err
-  // all records with that username deleted from the database
+  // record with that username deleted from the database
 })
 ```
