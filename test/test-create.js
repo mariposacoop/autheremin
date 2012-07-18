@@ -17,9 +17,9 @@ var password = 'non34Aro'
 var hashed = false
 
 autheremin.create(username, password, function(err) {
-  assert.ifError(err)
-  bcrypt.compare(password, db.store.joan, function(err, res) {
-    assert.ifError(err)
+  if (err) throw err
+  bcrypt.compare(password, db.store['autheremin:joan'], function(err, res) {
+    if (err) throw err
     hashed = res
   })
 })
