@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "description": "Authing against a DB",
   "homepage": "https://github.com/hackmastera/autheremin.git",
-  "engines": {
-    "node": "0.8.2",
-    "npm": "1.1.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hackmastera/autheremin.git"
