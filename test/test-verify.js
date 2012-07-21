@@ -15,13 +15,12 @@ db.get = function(key, cb) {
 
 var autheremin = require('../autheremin')(db)
 
-var verified = false
-
+var verified
 autheremin.verify(username, password, function(err) {
   if (err) throw err
   verified = true
 })
 
 process.on('exit', function() {
-  assert(verified)
+  assert(verified, 'should verify correct username/password')
 })
