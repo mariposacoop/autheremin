@@ -1,5 +1,4 @@
 var assert = require('assert')
-var bcrypt = require('bcrypt')
 
 var username = 'joan'
 
@@ -8,7 +7,7 @@ var db = function() {}
 db.store = {}
 db.store['autheremin:'+username] = 'somekindacrazyhash#&*$##'
 db.del = function(key, cb) {
-  delete db.store[key]
+  db.store[key] = undefined
   cb()
 }
 
@@ -22,5 +21,5 @@ autheremin.delete(username, function(err) {
 })
 
 process.on('exit', function() {
-  assert(deleted, 'should have deleted the key at that username')
+  assert(deleted, 'should delete the key at that username')
 })
