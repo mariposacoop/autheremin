@@ -12,6 +12,13 @@ module.exports = function(db) {
       })
     })
   }
+
+  autheremin.delete = function(username, cb) {
+    db.del('autheremin:'+username, function(err) {
+      if (err) return cb(err)
+      cb()
+    })
+  }
   
   autheremin.verify = function(username, password, cb) {
     db.get('autheremin:'+username, function(err, hash) {
