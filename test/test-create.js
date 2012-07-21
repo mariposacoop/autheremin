@@ -25,5 +25,5 @@ autheremin.create(username, password, function(err) {
 })
 
 process.on('exit', function() {
-  assert(hashed)
+  assert(hashed, 'should create a username/password combination in our database')
 })
