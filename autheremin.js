@@ -19,7 +19,7 @@ module.exports = function(db) {
       cb()
     })
   }
-  
+
   autheremin.verify = function(username, password, cb) {
     db.get('autheremin:'+username, function(err, hash) {
       if (err) return cb(err)
