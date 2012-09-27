@@ -1,6 +1,6 @@
 {
   "name": "autheremin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Authing against a DB",
   "homepage": "https://github.com/hackmastera/autheremin.git",
   "main": "./autheremin",
