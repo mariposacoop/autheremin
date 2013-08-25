@@ -12,6 +12,6 @@
     "test" : "find test/test-*.js | xargs -n 1 -t node"
   },
   "dependencies": {
-    "bcrypt": "0.7.0"
+    "bcrypt": "~0.7.6"
   } 
 }
